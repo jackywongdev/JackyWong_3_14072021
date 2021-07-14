@@ -31,7 +31,7 @@ hands-helping <i class="fas fa-hands-helping"></i>
 
 .logo,
 .search-bar {
-  display: flex;
+  display: block;
   justify-content: center;
 }
 
@@ -42,7 +42,6 @@ hands-helping <i class="fas fa-hands-helping"></i>
 .search-bar {
   justify-content: center;
 }
-
 .restaurant-button {
   justify-content: center;
 }

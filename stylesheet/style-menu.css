@@ -1,0 +1,25 @@
+*{
+    margin: 0;
+    padding: 0;
+    }
+}
+
+/* section picrure */
+
+.picture{
+    display: block;
+    width: 375px;
+    box-sizing: border-box;
+}
+
+.picture img{
+    width: 375px;
+    object-fit: cover;
+
+}
+
+.img-restaurant{
+    width: 375px;
+    height: auto;
+   
+}
