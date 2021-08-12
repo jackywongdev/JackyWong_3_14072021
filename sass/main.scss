@@ -1,0 +1,224 @@
+@import "./Base/reset";
+@import "./Base/typography";
+@import "./Layout/header-main-page";
+@import "./Base/color-variables";
+@import "./Composants/button-restaurants";
+@import "./Composants/button-card";
+@import "./Themes/footer";
+
+.main-container {
+  margin: auto;
+  max-width: 900px;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo-header img {
+  width: 200px;
+  display: flex;
+  justify-content: center;
+  margin: auto;
+}
+
+.booking {
+  align-items: center;
+}
+
+.booking h2 {
+  font-weight: bold;
+  font-size: x-large;
+  margin-top: 30px;
+  text-align: center;
+}
+
+.booking p {
+  padding: 15px 0 0 30px;
+  margin: 15px 0;
+  text-align: center;
+}
+
+.operation {
+  width: 900px;
+  align-items: center;
+  justify-content: center;
+}
+
+.operation-container h3 {
+  margin: 50px 0 30px 0;
+  font-weight: bold;
+}
+
+a {
+  text-decoration: none;
+}
+
+.restaurant-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  margin-top: 30px;
+}
+
+.card-holder {
+  width: 100%;
+  display: flex;
+}
+
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.card-content {
+  display: flex;
+  align-items: center;
+}
+
+.circle {
+  background-color: #9356dc;
+  color: white;
+  border-radius: 50%;
+  padding: 5px 9px;
+  margin-left: -40px;
+}
+.card-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: nowrap;
+  padding: 25px;
+  margin: 15px 20px 15px 30px;
+  border-radius: 20px;
+  box-shadow: 1px 2px 8px 2px #c4c4c4;
+  background-color: #f5f5f5;
+
+  .fas {
+    color: rgb(121, 121, 121);
+    padding: 0 10px;
+  }
+  a {
+    color: black;
+  }
+}
+
+.fav-restaurant {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  h4 {
+    font-weight: bold;
+    padding: 3px 0 0 9px;
+  }
+}
+
+.fav-heart {
+  display: flex;
+  position: absolute;
+  right: 2%;
+}
+
+.fav-heart:hover {
+  opacity: 0;
+}
+
+.fav-heartfull {
+  display: flex;
+  opacity: 0;
+  position: absolute;
+  right: 2%;
+}
+
+.fav-heartfull:hover {
+  opacity: 1;
+  color: red;
+}
+
+.fav-container {
+  height: 46px;
+  position: relative;
+  text-decoration: none;
+  color: black;
+}
+
+.fav-text p {
+  padding: 0 0 2px 9px;
+  font-size: small;
+  text-decoration: none;
+  color: black;
+}
+
+@media screen and (max-width: 899px) {
+  .main-container {
+    width: 100%;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+  }
+  .operation {
+    width: 100%;
+    margin: auto;
+  }
+  .operation-container h3 {
+    padding-left: 30px;
+  }
+
+  .card-container {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .card-list {
+    width: 95%;
+    justify-content: center;
+  }
+
+  .card-holder {
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .restaurant-container {
+    flex-direction: column;
+    width: 85%;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    margin-top: 20px;
+  }
+  .restaurant-content {
+    width: 100%;
+    margin: auto;
+    margin-bottom: 25px;
+    img {
+      width: 100%;
+    }
+    .restaurant-content a {
+      text-decoration: none;
+    }
+  }
+}
+
+//  font awsome logo
+
+// mobile-alt <i class="fas fa-mobile-alt"></i>
+
+// list-ul <i class="fas fa-list-ul"></i>
+
+// store <i class="fas fa-store"></i>
+
+// heart empty <i class="far fa-heart"></i>
+
+// heart full <i class="fas fa-heart"></i>
+
+// check-circle <i class="far fa-check-circle"></i>
+
+// arrow-left <i class="fas fa-arrow-left"></i>
+
+// utensils <i class="fas fa-utensils"></i>
+
+// hands-helping <i class="fas fa-hands-helping"></i>

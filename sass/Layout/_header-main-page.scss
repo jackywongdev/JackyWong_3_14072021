@@ -1,0 +1,36 @@
+header {
+  .logo {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+
+.search-bar {
+  text-align: center;
+  width: 100%;
+  padding: 10px 0;
+  background-color: #99e2d0;
+}
+
+.restaurant-container {
+  width: 900px;
+  display: flex;
+}
+
+.restaurant-content {
+  margin: 15px 20px;
+  width: 300px;
+  height: auto;
+  border-radius: 20px;
+  margin-bottom: 30px;
+  box-shadow: 0 0 7px #afaeae;
+  box-sizing: border-box;
+  overflow: hidden;
+  img {
+    width: 300px;
+    height: 211px;
+    object-fit: cover;
+  }
+}

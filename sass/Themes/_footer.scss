@@ -1,0 +1,26 @@
+footer {
+  width: 100%;
+}
+
+.footer-container {
+  background-color: #353535;
+}
+
+.footer-logo img {
+  width: 130px;
+  filter: invert(100%);
+  padding: 30px 0 25px 40px;
+}
+
+.footer .fas {
+  color: white;
+}
+
+.footer-text {
+  margin-left: 40px;
+  list-style-type: none;
+  padding-bottom: 10px;
+  a {
+    color: white;
+  }
+}

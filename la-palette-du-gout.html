@@ -4,24 +4,30 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>ohmyfood</title>
-    <link rel="stylesheet" href="stylesheet\style-menu.css" />
+    <link rel="stylesheet" href="css/page.css" />
     <script
       src="https://kit.fontawesome.com/5cd8898d53.js"
       crossorigin="anonymous"
     ></script>
   </head>
   <body>
-    <section class="main-container">
+    <div class="main-container">
       <!-- header -->
       <header>
         <nav>
           <div class="nav-bar">
-            <span><i class="fas fa-arrow-left"></i></span>
-            <a href="#index.html"
+            <div class="arrow">
+              <a href="index.html">
+            <i class="fas fa-arrow-left fa-2x"></i>
+          </a>
+          </div>
+            <div class="logo">
+            <a href="index.html"
               ><img
-                src="Maquettes Ohmyfood\images\logo\ohmyfood@2x.svg"
+                src="Maquettes-Ohmyfood/images/logo/ohmyfood.png"
                 alt="logo-ohmyfood"
             /></a>
+          </div>
           </div>
         </nav>
       </header>
@@ -30,7 +36,7 @@
       <section class="picture">
         <div class="img-restaurant">
           <img
-            src="Maquettes Ohmyfood\images\restaurants\toa-heftiba-DQKerTsQwi0-unsplash.jpg"
+            src="Maquettes-Ohmyfood/images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg"
             alt="photo d'un plat du restaurant à la française"
           />
         </div>
@@ -111,31 +117,37 @@
       </section>
 
       <!-- footer -->
-      <footer>
-        <section class="footer-container">
-          <div class="footer-content">
-            <img
-              src="Maquettes Ohmyfood\images\logo\ohmyfood@2x.svg"
-              alt="logo-ohmyfood"
-            />
-            <div>
-              <ul>
-                <li>
-                  <span><i class="fas fa-utensils"></i></span>
-                  Proposer un restaurant
-                </li>
-                <li>
-                  <span><i class="fas fa-hands-helping"></i></span>
-                  Devenir partenaire
-                </li>
-                <li>Mentions légales</li>
-                <li>Contact</li>
-              </ul>
-            </div>
+      <footer class="footer-container">
+        <div class="footer-content">
+          <div class="footer-logo">
+            <a href="index.html">
+              <img
+                src="Maquettes-Ohmyfood/images/logo/ohmyfood.png"
+                alt="logo-ohmyfood"
+              />
+            </a>
           </div>
-        </section>
+          <div>
+            <ul>
+              <li class="footer-text">
+                <a href="#"
+                  ><span><i class="fas fa-utensils"></i></span> Proposer un
+                  restaurant</a
+                >
+              </li>
+              <li class="footer-text">
+                <a href="#"
+                  ><span><i class="fas fa-hands-helping"></i></span> Devenir
+                  partenaire</a
+                >
+              </li>
+              <li class="footer-text"><a href="#"> légales</a></li>
+              <li class="footer-text"><a href="#">Contact</a></li>
+            </ul>
+          </div>
+        </div>
       </footer>
       <!-- fin footer -->
-    </section>
+    <div>
   </body>
 </html>

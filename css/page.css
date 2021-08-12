@@ -1,0 +1,71 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 1em;
+  font-weight: normal;
+  font-style: normal;
+  text-decoration: none;
+}
+
+body,
+html {
+  font-family: "Roboto", sans-serif;
+}
+
+h1,
+h6 {
+  font-family: Shrikhand, Roboto, sans-serif;
+}
+
+footer {
+  width: 100%;
+}
+
+.footer-container {
+  background-color: #353535;
+}
+
+.footer-logo img {
+  width: 130px;
+  -webkit-filter: invert(100%);
+          filter: invert(100%);
+  padding: 30px 0 25px 40px;
+}
+
+.footer .fas {
+  color: white;
+}
+
+.footer-text {
+  margin-left: 40px;
+  list-style-type: none;
+  padding-bottom: 10px;
+}
+
+.footer-text a {
+  color: white;
+}
+
+.nav-bar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.arrow a i {
+  text-decoration: none;
+  color: black;
+}
+
+.img-restaurant img {
+  width: 200px;
+}
+/*# sourceMappingURL=page.css.map */

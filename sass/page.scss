@@ -1,0 +1,23 @@
+@import "./Base/reset";
+@import "./Base/typography";
+@import "./Themes/footer";
+
+.nav-bar {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: center;
+}
+
+.arrow {
+  a {
+    i {
+      text-decoration: none;
+      color: black;
+    }
+  }
+}
+
+.img-restaurant img {
+  width: 200px;
+}
