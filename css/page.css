@@ -47,6 +47,26 @@ footer {
   color: white;
 }
 
+.restaurant-button {
+  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 30px auto;
+  width: 200px;
+  padding: 15px 10px;
+  border-radius: 50px;
+  background: -webkit-gradient(linear, left top, left bottom, from(#d579d5), to(#9356dc));
+  background: linear-gradient(#d579d5, #9356dc);
+  -webkit-box-shadow: 1px 2px 8px 2px #c4c4c4;
+          box-shadow: 1px 2px 8px 2px #c4c4c4;
+}
+
+.restaurant-button a {
+  text-decoration: none;
+  color: white;
+}
+
 .nav-bar {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -60,12 +80,117 @@ footer {
           justify-content: center;
 }
 
+.logo img {
+  width: 200px;
+}
+
 .arrow a i {
   text-decoration: none;
   color: black;
 }
 
 .img-restaurant img {
-  width: 200px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  height: 250px;
+}
+
+.menu-container {
+  background-color: #f6f6f6;
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+  position: relative;
+  margin-top: -50px;
+}
+
+.menu-title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.menu-title h1 {
+  font-size: x-large;
+  font-weight: bold;
+  padding: 10px 0 10px 10px;
+}
+
+.menu-type h2 {
+  font-size: 1.2rem;
+  font-weight: bold;
+  padding: 10px 0 5px 10px;
+}
+
+.under-line {
+  width: 40px;
+  border: 2px solid #99e2d0;
+  margin-left: 10px;
+}
+
+.dish-content {
+  margin: 10px;
+  padding: 10px;
+  border-radius: 15px;
+  -webkit-box-shadow: 4px 4px 6px #aaa;
+          box-shadow: 4px 4px 6px #aaa;
+}
+
+.dish-title h3 {
+  font-size: 1rem;
+  font-weight: bold;
+  padding: 10px 0 0px 10px;
+}
+
+.dish-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 2px 0 5px 10px;
+  font-size: 0.9rem;
+}
+
+.dish-text span {
+  font-weight: bold;
+  padding-right: 10px;
+}
+
+.fav-heart {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  right: 4%;
+}
+
+.fav-heart:hover {
+  opacity: 0;
+}
+
+.fav-heartfull {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  opacity: 0;
+  position: absolute;
+  right: 4%;
+}
+
+.fav-heartfull:hover {
+  opacity: 1;
+  color: red;
+}
+
+.footer-container {
+  margin-top: 30px;
 }
 /*# sourceMappingURL=page.css.map */
