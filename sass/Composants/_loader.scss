@@ -6,15 +6,34 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  z-index: 1001;
-  animation: loader 4sec;
+  z-index: 9999;
+  overflow: hidden;
+  animation: loader 5s ease;
+  animation-fill-mode: forwards;
 }
 .lettre {
+  font-family: Shrikhand;
   color: black;
   font-size: 80px;
   letter-spacing: 10px;
   margin-bottom: 150px;
-  animation: flash 1.2s linear infinite;
+  animation: flash 1s linear infinite;
+}
+@keyframes loader {
+  0% {
+    opacity: 1;
+    z-index: 9999;
+  }
+  99% {
+    opacity: 1;
+    z-index: 9999;
+  }
+  100% {
+    opacity: 0;
+    transition: ease;
+    overflow: hidden;
+    z-index: -9999;
+  }
 }
 @keyframes flash {
   0% {
@@ -30,7 +49,6 @@
     text-shadow: 0 0 7px #9b9b9b;
   }
 }
-
 .lettre:nth-child(1) {
   animation-delay: 0.1s;
 }
@@ -54,10 +72,4 @@
 }
 .lettre:nth-child(8) {
   animation-delay: 0.8s;
-}
-
-.loader {
-  animation-name: flash;
-  animation-duration: 4s;
-  opacity: 0;
 }

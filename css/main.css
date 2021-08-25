@@ -132,18 +132,58 @@ footer {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  z-index: 1001;
-  -webkit-animation: loader 4sec;
-          animation: loader 4sec;
+  z-index: 9999;
+  overflow: hidden;
+  -webkit-animation: loader 5s ease;
+          animation: loader 5s ease;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
 }
 
 .lettre {
+  font-family: Shrikhand;
   color: black;
   font-size: 80px;
   letter-spacing: 10px;
   margin-bottom: 150px;
-  -webkit-animation: flash 1.2s linear infinite;
-          animation: flash 1.2s linear infinite;
+  -webkit-animation: flash 1s linear infinite;
+          animation: flash 1s linear infinite;
+}
+
+@-webkit-keyframes loader {
+  0% {
+    opacity: 1;
+    z-index: 9999;
+  }
+  99% {
+    opacity: 1;
+    z-index: 9999;
+  }
+  100% {
+    opacity: 0;
+    -webkit-transition: ease;
+    transition: ease;
+    overflow: hidden;
+    z-index: -9999;
+  }
+}
+
+@keyframes loader {
+  0% {
+    opacity: 1;
+    z-index: 9999;
+  }
+  99% {
+    opacity: 1;
+    z-index: 9999;
+  }
+  100% {
+    opacity: 0;
+    -webkit-transition: ease;
+    transition: ease;
+    overflow: hidden;
+    z-index: -9999;
+  }
 }
 
 @-webkit-keyframes flash {
@@ -214,14 +254,6 @@ footer {
 .lettre:nth-child(8) {
   -webkit-animation-delay: 0.8s;
           animation-delay: 0.8s;
-}
-
-.loader {
-  -webkit-animation-name: flash;
-          animation-name: flash;
-  -webkit-animation-duration: 4s;
-          animation-duration: 4s;
-  opacity: 0;
 }
 
 .main-container {
