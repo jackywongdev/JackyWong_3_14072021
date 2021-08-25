@@ -19,6 +19,7 @@
   display: flex;
   justify-content: center;
   margin: auto;
+  padding: 15px;
 }
 
 .booking {
@@ -152,6 +153,14 @@ a {
   color: black;
 }
 
+@media screen and (max-width: 534px) {
+  .loader {
+    .lettre {
+      font-size: 35px;
+    }
+  }
+}
+
 @media screen and (max-width: 899px) {
   .main-container {
     width: 100%;
@@ -180,11 +189,11 @@ a {
   }
 
   .card-list {
-    width: 77%;
+    width: 76%;
     justify-content: center;
   }
   .circle {
-    margin-right: 10%;
+    margin-right: 77%;
     position: absolute;
   }
 

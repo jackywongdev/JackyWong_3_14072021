@@ -1,3 +1,6 @@
+body.loader {
+  overflow: hidden;
+}
 .loader {
   position: absolute;
   width: 100%;
@@ -7,7 +10,6 @@
   justify-content: center;
   align-items: center;
   z-index: 9999;
-  overflow: hidden;
   animation: loader 5s ease;
   animation-fill-mode: forwards;
 }
@@ -31,7 +33,6 @@
   100% {
     opacity: 0;
     transition: ease;
-    overflow: hidden;
     z-index: -9999;
   }
 }

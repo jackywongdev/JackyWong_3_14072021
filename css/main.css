@@ -20,18 +20,18 @@ h6 {
 
 header .logo {
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
 }
 
 .search-bar {
@@ -55,9 +55,9 @@ header .logo {
   border-radius: 20px;
   margin-bottom: 30px;
   -webkit-box-shadow: 0 0 7px #afaeae;
-          box-shadow: 0 0 7px #afaeae;
+  box-shadow: 0 0 7px #afaeae;
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   overflow: hidden;
 }
 
@@ -65,22 +65,28 @@ header .logo {
   width: 300px;
   height: 211px;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 
 .restaurant-button {
   text-align: center;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   margin: 30px auto;
   width: 200px;
   padding: 15px 10px;
   border-radius: 50px;
-  background: -webkit-gradient(linear, left top, left bottom, from(#d579d5), to(#9356dc));
+  background: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    from(#d579d5),
+    to(#9356dc)
+  );
   background: linear-gradient(#d579d5, #9356dc);
   -webkit-box-shadow: 1px 2px 8px 2px #c4c4c4;
-          box-shadow: 1px 2px 8px 2px #c4c4c4;
+  box-shadow: 1px 2px 8px 2px #c4c4c4;
 }
 
 .restaurant-button a {
@@ -99,7 +105,7 @@ footer {
 .footer-logo img {
   width: 130px;
   -webkit-filter: invert(100%);
-          filter: invert(100%);
+  filter: invert(100%);
   padding: 30px 0 25px 40px;
 }
 
@@ -117,27 +123,38 @@ footer {
   color: white;
 }
 
+body.loader {
+  overflow: hidden;
+}
+
 .loader {
   position: absolute;
   width: 100%;
   height: 100%;
-  background: -webkit-gradient(linear, left top, left bottom, from(#ffffff), color-stop(#99e2d0), color-stop(#ff79da), to(#9356dc));
+  background: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    from(#ffffff),
+    color-stop(#99e2d0),
+    color-stop(#ff79da),
+    to(#9356dc)
+  );
   background: linear-gradient(#ffffff, #99e2d0, #ff79da, #9356dc);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   z-index: 9999;
-  overflow: hidden;
   -webkit-animation: loader 5s ease;
-          animation: loader 5s ease;
+  animation: loader 5s ease;
   -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
 }
 
 .lettre {
@@ -147,7 +164,7 @@ footer {
   letter-spacing: 10px;
   margin-bottom: 150px;
   -webkit-animation: flash 1s linear infinite;
-          animation: flash 1s linear infinite;
+  animation: flash 1s linear infinite;
 }
 
 @-webkit-keyframes loader {
@@ -163,7 +180,6 @@ footer {
     opacity: 0;
     -webkit-transition: ease;
     transition: ease;
-    overflow: hidden;
     z-index: -9999;
   }
 }
@@ -181,7 +197,6 @@ footer {
     opacity: 0;
     -webkit-transition: ease;
     transition: ease;
-    overflow: hidden;
     z-index: -9999;
   }
 }
@@ -218,53 +233,53 @@ footer {
 
 .lettre:nth-child(1) {
   -webkit-animation-delay: 0.1s;
-          animation-delay: 0.1s;
+  animation-delay: 0.1s;
 }
 
 .lettre:nth-child(2) {
   -webkit-animation-delay: 0.2s;
-          animation-delay: 0.2s;
+  animation-delay: 0.2s;
 }
 
 .lettre:nth-child(3) {
   -webkit-animation-delay: 0.3s;
-          animation-delay: 0.3s;
+  animation-delay: 0.3s;
 }
 
 .lettre:nth-child(4) {
   -webkit-animation-delay: 0.4s;
-          animation-delay: 0.4s;
+  animation-delay: 0.4s;
 }
 
 .lettre:nth-child(5) {
   -webkit-animation-delay: 0.5s;
-          animation-delay: 0.5s;
+  animation-delay: 0.5s;
 }
 
 .lettre:nth-child(6) {
   -webkit-animation-delay: 0.6s;
-          animation-delay: 0.6s;
+  animation-delay: 0.6s;
 }
 
 .lettre:nth-child(7) {
   -webkit-animation-delay: 0.7s;
-          animation-delay: 0.7s;
+  animation-delay: 0.7s;
 }
 
 .lettre:nth-child(8) {
   -webkit-animation-delay: 0.8s;
-          animation-delay: 0.8s;
+  animation-delay: 0.8s;
 }
 
 .main-container {
   margin: auto;
   max-width: 900px;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
 }
 
 .logo-header img {
@@ -273,15 +288,16 @@ footer {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   margin: auto;
+  padding: 15px;
 }
 
 .booking {
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 .booking h2 {
@@ -300,11 +316,11 @@ footer {
 .operation {
   width: 900px;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
 }
 
 .operation-container h3 {
@@ -321,10 +337,10 @@ a {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
   -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  -ms-flex-pack: space-evenly;
+  justify-content: space-evenly;
   margin-top: 30px;
 }
 
@@ -340,13 +356,13 @@ a {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  -ms-flex-pack: space-evenly;
+  justify-content: space-evenly;
 }
 
 .card-content {
@@ -354,8 +370,8 @@ a {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 .circle {
@@ -372,21 +388,21 @@ a {
   display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
   -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -ms-flex-wrap: nowrap;
-      flex-wrap: nowrap;
+  flex-wrap: nowrap;
   padding: 25px;
   margin: 15px 20px 15px 30px;
   border-radius: 20px;
   -webkit-box-shadow: 1px 2px 8px 2px #c4c4c4;
-          box-shadow: 1px 2px 8px 2px #c4c4c4;
+  box-shadow: 1px 2px 8px 2px #c4c4c4;
   background-color: #f5f5f5;
   width: auto;
 }
@@ -405,11 +421,11 @@ a {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 .fav-restaurant h4 {
@@ -457,16 +473,22 @@ a {
   color: black;
 }
 
+@media screen and (max-width: 534px) {
+  .loader .lettre {
+    font-size: 35px;
+  }
+}
+
 @media screen and (max-width: 899px) {
   .main-container {
     width: 100%;
     margin: auto;
     -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
     -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
   }
   .operation {
     width: 100%;
@@ -479,14 +501,14 @@ a {
     width: 100%;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
     -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
     -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
   }
   .card-container {
     width: 100%;
@@ -494,31 +516,31 @@ a {
     display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
   }
   .card-list {
-    width: 77%;
+    width: 76%;
     -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
   }
   .circle {
-    margin-right: 10%;
+    margin-right: 77%;
     position: absolute;
   }
   .restaurant-container {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
     width: 85%;
     -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
     -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
     margin: auto;
     margin-top: 20px;
   }

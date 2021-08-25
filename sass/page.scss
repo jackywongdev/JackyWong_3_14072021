@@ -3,6 +3,12 @@
 @import "./Themes/footer";
 @import "./Composants/button-restaurants";
 @import "./Composants/card-animation";
+.header-bar {
+  display: flex;
+  align-items: center;
+  padding: 10px 0;
+}
+
 .nav-bar {
   display: flex;
   align-items: center;
@@ -15,6 +21,7 @@
 }
 
 .arrow {
+  padding-left: 20px;
   a {
     i {
       text-decoration: none;
@@ -107,4 +114,33 @@
 
 .footer-container {
   margin-top: 30px;
+}
+
+@media screen and (min-width: 1018px) {
+  .img-restaurant img {
+    height: 310px;
+    width: 100%;
+  }
+  .menu-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin: auto;
+  }
+  .menu-container {
+    margin: auto;
+    justify-content: center;
+    max-width: 1280px;
+  }
+  .menu-title {
+    justify-content: center;
+    background-color: #f6f6f6;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    position: relative;
+    margin-top: -50px;
+  }
+  .menu-type li {
+    list-style-type: none;
+  }
 }
