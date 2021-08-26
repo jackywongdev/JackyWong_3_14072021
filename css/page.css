@@ -67,6 +67,81 @@ footer {
   color: white;
 }
 
+.fade-in-up {
+  -webkit-animation: card-animation 1.8s linear;
+          animation: card-animation 1.8s linear;
+}
+
+@-webkit-keyframes card-animation {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 5%, 0);
+            transform: translate3d(0, 5%, 0);
+  }
+  50% {
+    opacity: 0.7;
+    -webkit-transform: translate3d(0, 3%, 0);
+            transform: translate3d(0, 3%, 0);
+  }
+  80% {
+    opacity: 0.9;
+    -webkit-transform: translate3d(0, 1%, 0);
+            transform: translate3d(0, 1%, 0);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+  }
+  .dish-content:nth-child(1) {
+    -webkit-animation-delay: 0.1s;
+            animation-delay: 0.1s;
+  }
+  .dish-content:nth-child(2) {
+    -webkit-animation-delay: 0.2s;
+            animation-delay: 0.2s;
+  }
+  .dish-content:nth-child(3) {
+    -webkit-animation-delay: 0.3s;
+            animation-delay: 0.3s;
+  }
+}
+
+@keyframes card-animation {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 5%, 0);
+            transform: translate3d(0, 5%, 0);
+  }
+  50% {
+    opacity: 0.7;
+    -webkit-transform: translate3d(0, 3%, 0);
+            transform: translate3d(0, 3%, 0);
+  }
+  80% {
+    opacity: 0.9;
+    -webkit-transform: translate3d(0, 1%, 0);
+            transform: translate3d(0, 1%, 0);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+  }
+  .dish-content:nth-child(1) {
+    -webkit-animation-delay: 0.1s;
+            animation-delay: 0.1s;
+  }
+  .dish-content:nth-child(2) {
+    -webkit-animation-delay: 0.2s;
+            animation-delay: 0.2s;
+  }
+  .dish-content:nth-child(3) {
+    -webkit-animation-delay: 0.3s;
+            animation-delay: 0.3s;
+  }
+}
+
 .header-bar {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -149,6 +224,7 @@ footer {
 }
 
 .dish-content {
+  width: 325px;
   margin: 10px;
   padding: 10px;
   border-radius: 15px;
@@ -206,6 +282,13 @@ footer {
 
 .footer-container {
   margin-top: 30px;
+}
+
+@media screen and (min-width: 1280px) {
+  .arrow {
+    position: -webkit-sticky;
+    position: sticky;
+  }
 }
 
 @media screen and (min-width: 1018px) {

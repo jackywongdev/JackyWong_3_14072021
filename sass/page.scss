@@ -67,6 +67,7 @@
 }
 
 .dish-content {
+  width: 325px;
   margin: 10px;
   padding: 10px;
   border-radius: 15px;
@@ -116,6 +117,11 @@
   margin-top: 30px;
 }
 
+@media screen and (min-width: 1280px) {
+  .arrow {
+    position: sticky;
+  }
+}
 @media screen and (min-width: 1018px) {
   .img-restaurant img {
     height: 310px;
