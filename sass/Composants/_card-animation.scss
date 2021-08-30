@@ -1,31 +1,45 @@
-.fade-in-up {
-  animation: card-animation 1.8s linear;
-}
+// .fade-in-up {
+//   animation: card-animation 2s linear;
+// }
 
 @keyframes card-animation {
-  0% {
+  from {
+    transform: translateY(15px);
     opacity: 0;
-    transform: translate3d(0, 5%, 0);
   }
-  50% {
-    opacity: 0.7;
-    transform: translate3d(0, 3%, 0);
-  }
-  80% {
-    opacity: 0.9;
-    transform: translate3d(0, 1%, 0);
-  }
-  100% {
+  to {
+    transform: translateY(0px);
     opacity: 1;
-    transform: translate3d(0, 0, 0);
   }
-  .dish-content:nth-child(1) {
-    animation-delay: 0.1s;
-  }
-  .dish-content:nth-child(2) {
-    animation-delay: 0.2s;
-  }
-  .dish-content:nth-child(3) {
-    animation-delay: 0.3s;
-  }
+}
+
+#delay-1 {
+  animation: card-animation 2s 0.1s ease-in-out forwards;
+}
+#delay-2 {
+  animation: card-animation 2s 0.2s ease-in-out forwards;
+}
+#delay-3 {
+  animation: card-animation 2s 0.3s ease-in-out forwards;
+}
+#delay-4 {
+  animation: card-animation 2s 0.4s ease-in-out forwards;
+}
+#delay-5 {
+  animation: card-animation 2s 0.5s ease-in-out forwards;
+}
+#delay-6 {
+  animation: card-animation 2s 0.6s ease-in-out forwards;
+}
+#delay-7 {
+  animation: card-animation 2s 0.7s ease-in-out forwards;
+}
+#delay-8 {
+  animation: card-animation 2s 0.8s ease-in-out forwards;
+}
+#delay-9 {
+  animation: card-animation 2s 0.9s ease-in-out forwards;
+}
+#delay-10 {
+  animation: card-animation 2s 1s ease-in-out forwards;
 }

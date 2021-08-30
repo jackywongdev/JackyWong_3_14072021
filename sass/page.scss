@@ -3,6 +3,7 @@
 @import "./Themes/footer";
 @import "./Composants/button-restaurants";
 @import "./Composants/card-animation";
+@import "./Composants/heart";
 .header-bar {
   display: flex;
   align-items: center;
@@ -67,11 +68,12 @@
 }
 
 .dish-content {
-  width: 325px;
+  width: auto;
   margin: 10px;
   padding: 10px;
   border-radius: 15px;
   box-shadow: 4px 4px 6px #aaa;
+  opacity: 0;
 }
 
 .dish-title h3 {
@@ -87,42 +89,46 @@
   font-size: 0.9rem;
   span {
     font-weight: bold;
-    padding-right: 10px;
+    padding-left: 15px;
   }
 }
 
-.fav-heart {
-  display: flex;
-  position: absolute;
-  right: 4%;
-}
+// .fav-heart {
+//   display: flex;
+//   position: absolute;
+//   right: 4%;
+// }
 
-.fav-heart:hover {
-  opacity: 0;
-}
+// .fav-heart:hover {
+//   opacity: 0;
+// }
 
-.fav-heartfull {
-  display: flex;
-  opacity: 0;
-  position: absolute;
-  right: 4%;
-}
+// .fav-heartfull {
+//   display: flex;
+//   opacity: 0;
+//   position: absolute;
+//   right: 4%;
+// }
 
-.fav-heartfull:hover {
-  opacity: 1;
-  color: red;
-}
-
+// .fav-heartfull:hover {
+//   opacity: 1;
+//   :before {
+//     color: transparent;
+//     border: transparent;
+//     background-clip: text;
+//     -webkit-background-clip: text;
+//     background-image: linear-gradient(
+//       180deg,
+//       rgba(146, 86, 220, 0.7),
+//       rgba(255, 121, 218, 0.7)
+//     );
+//   }
+// }
 .footer-container {
   margin-top: 30px;
 }
 
-@media screen and (min-width: 1280px) {
-  .arrow {
-    position: sticky;
-  }
-}
-@media screen and (min-width: 1018px) {
+@media screen and (min-width: 1030px) {
   .img-restaurant img {
     height: 310px;
     width: 100%;
