@@ -1,9 +1,11 @@
 @import "./Base/reset";
+@import "./Base/color-variables";
 @import "./Base/typography";
 @import "./Layout/header-main-page";
 @import "./Base/color-variables";
 @import "./Composants/button-restaurants";
 @import "./Composants/button-card";
+@import "./Composants/new-label";
 @import "./Themes/footer";
 @import "./Composants/loader";
 
@@ -61,6 +63,22 @@ a {
   margin-top: 30px;
 }
 
+.restaurant-content {
+  margin: 15px 20px;
+  width: 300px;
+  height: auto;
+  border-radius: 20px;
+  margin-bottom: 30px;
+  box-shadow: 0 0 7px #afaeae;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.restaurant-content img {
+  width: 300px;
+  height: 211px;
+  object-fit: cover;
+}
 .card-holder {
   width: 100%;
   display: flex;
@@ -75,7 +93,7 @@ a {
     .card-list:hover {
       background-color: rgb(235, 235, 255);
       i {
-        color: rgb(55, 55, 255);
+        color: $primary;
       }
     }
   }
@@ -87,7 +105,7 @@ a {
 }
 
 .circle {
-  background-color: #9356dc;
+  background-color: $primary;
   color: white;
   border-radius: 50%;
   padding: 5px 9px;
@@ -95,10 +113,9 @@ a {
 }
 .card-list {
   display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
+  // justify-content: flex-start;
   align-items: center;
-  flex-wrap: nowrap;
+  // flex-wrap: nowrap;
   padding: 25px;
   margin: 15px 20px 15px 30px;
   border-radius: 20px;
@@ -116,7 +133,7 @@ a {
 }
 .fav-restaurant {
   display: flex;
-  // justify-content: space-between;
+  justify-content: space-between;
   align-items: center;
   h4 {
     font-weight: bold;
@@ -198,13 +215,18 @@ a {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    margin: auto;
   }
-
+  .card-list {
+    width: 77%;
+  }
   .card-container {
     width: 100%;
-    display: flex;
+    display: block;
     justify-content: center;
+    margin: auto;
   }
+
   .circle {
     margin-right: 77%;
     position: absolute;

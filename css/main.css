@@ -41,6 +41,10 @@ header .logo {
   background-color: #99e2d0;
 }
 
+#my-booking {
+  background-color: #99e2d0;
+}
+
 .restaurant-container {
   width: 900px;
   display: -webkit-box;
@@ -49,6 +53,7 @@ header .logo {
 }
 
 .restaurant-content {
+  position: relative;
   margin: 15px 20px;
   width: 300px;
   height: auto;
@@ -86,6 +91,28 @@ header .logo {
 .restaurant-button a {
   text-decoration: none;
   color: white;
+}
+
+.restaurant-button:hover {
+  opacity: 0.7;
+}
+
+.label-new {
+  position: absolute;
+  right: 25px;
+  top: 18px;
+  width: 80px;
+  height: 30px;
+  background-color: #99e2d0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 footer {
@@ -138,8 +165,8 @@ footer {
       -ms-flex-align: center;
           align-items: center;
   z-index: 9999;
-  -webkit-animation: loader 4s ease;
-          animation: loader 4s ease;
+  -webkit-animation: loader 1s ease;
+          animation: loader 1s ease;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
 }
@@ -158,10 +185,12 @@ footer {
   0% {
     opacity: 1;
     z-index: 9999;
+    cursor: wait;
   }
   99% {
     opacity: 1;
     z-index: 9999;
+    cursor: wait;
   }
   100% {
     opacity: 0;
@@ -175,10 +204,12 @@ footer {
   0% {
     opacity: 1;
     z-index: 9999;
+    cursor: wait;
   }
   99% {
     opacity: 1;
     z-index: 9999;
+    cursor: wait;
   }
   100% {
     opacity: 0;
@@ -331,6 +362,26 @@ a {
   margin-top: 30px;
 }
 
+.restaurant-content {
+  margin: 15px 20px;
+  width: 300px;
+  height: auto;
+  border-radius: 20px;
+  margin-bottom: 30px;
+  -webkit-box-shadow: 0 0 7px #afaeae;
+          box-shadow: 0 0 7px #afaeae;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  overflow: hidden;
+}
+
+.restaurant-content img {
+  width: 300px;
+  height: 211px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
 .card-holder {
   width: 100%;
   display: -webkit-box;
@@ -357,7 +408,7 @@ a {
 }
 
 .card-container a .card-list:hover i {
-  color: #3737ff;
+  color: #9356dc;
 }
 
 .card-content {
@@ -381,18 +432,9 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -ms-flex-wrap: nowrap;
-      flex-wrap: nowrap;
   padding: 25px;
   margin: 15px 20px 15px 30px;
   border-radius: 20px;
@@ -415,6 +457,9 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -509,15 +554,18 @@ a {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    margin: auto;
+  }
+  .card-list {
+    width: 77%;
   }
   .card-container {
     width: 100%;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
+    display: block;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    margin: auto;
   }
   .circle {
     margin-right: 77%;

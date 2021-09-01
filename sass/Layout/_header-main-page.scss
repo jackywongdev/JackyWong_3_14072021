@@ -11,7 +11,10 @@ header {
   text-align: center;
   width: 100%;
   padding: 10px 0;
-  background-color: #99e2d0;
+  background-color: $tertiary;
+}
+#my-booking {
+  background-color: $tertiary;
 }
 
 .restaurant-container {
@@ -20,6 +23,7 @@ header {
 }
 
 .restaurant-content {
+  position: relative;
   margin: 15px 20px;
   width: 300px;
   height: auto;

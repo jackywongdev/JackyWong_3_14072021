@@ -72,6 +72,10 @@ footer {
   color: white;
 }
 
+.restaurant-button:hover {
+  opacity: 0.7;
+}
+
 @-webkit-keyframes card-animation {
   from {
     -webkit-transform: translateY(15px);
