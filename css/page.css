@@ -24,6 +24,16 @@ footer {
 
 .footer-container {
   background-color: #353535;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.footer-content {
+  width: 1280px;
 }
 
 .footer-logo img {
@@ -324,7 +334,7 @@ footer {
 .menu-title h1 {
   font-size: x-large;
   font-weight: bold;
-  padding: 10px 0 10px 10px;
+  padding: 10px 0 10px 20px;
 }
 
 .menu-type h2 {
@@ -347,14 +357,13 @@ footer {
   -webkit-box-shadow: 4px 4px 6px #aaa;
           box-shadow: 4px 4px 6px #aaa;
   opacity: 0;
-  width: auto;
   position: relative;
 }
 
 .dish-title h3 {
   font-size: 1rem;
   font-weight: bold;
-  padding: 10px 0 0px 10px;
+  padding: 10px 0 0p x 10px;
 }
 
 .dish-text p {
@@ -371,7 +380,6 @@ footer {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding: 2px 0 5px 10px;
   font-size: 0.9rem;
 }
 
@@ -392,9 +400,9 @@ footer {
   background-color: #99e2d0;
   -ms-flex-item-align: center;
       align-self: center;
-  height: 71px;
+  height: 58px;
   width: 60px;
-  margin-bottom: 25px;
+  margin-bottom: 21px;
   border-top-right-radius: 14px;
   border-bottom-right-radius: 14px;
   position: absolute;
@@ -455,6 +463,9 @@ footer {
   }
   .menu-type li {
     list-style-type: none;
+  }
+  .dish-content {
+    width: 342px;
   }
 }
 /*# sourceMappingURL=page.css.map */

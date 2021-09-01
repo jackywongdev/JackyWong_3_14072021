@@ -113,9 +113,8 @@ a {
 }
 .card-list {
   display: flex;
-  // justify-content: flex-start;
+  justify-content: center;
   align-items: center;
-  // flex-wrap: nowrap;
   padding: 25px;
   margin: 15px 20px 15px 30px;
   border-radius: 20px;
@@ -218,7 +217,7 @@ a {
     margin: auto;
   }
   .card-list {
-    width: 77%;
+    width: auto;
   }
   .card-container {
     width: 100%;
@@ -228,7 +227,7 @@ a {
   }
 
   .circle {
-    margin-right: 77%;
+    left: 58px;
     position: absolute;
   }
 

@@ -4,8 +4,12 @@ footer {
 
 .footer-container {
   background-color: #353535;
+  display: flex;
+  justify-content: center;
 }
-
+.footer-content {
+  width: 1280px;
+}
 .footer-logo img {
   width: 130px;
   filter: invert(100%);

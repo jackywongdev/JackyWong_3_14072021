@@ -4,141 +4,252 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>ohmyfood</title>
-    <link rel="stylesheet" href="stylesheet\style-menu.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/page.css" />
     <script
       src="https://kit.fontawesome.com/5cd8898d53.js"
       crossorigin="anonymous"
     ></script>
   </head>
   <body>
-    <section class="main-container">
+    <div class="main-container">
       <!-- header -->
       <header>
-        <nav>
+        <nav class="header-bar">
+          <div class="arrow">
+            <a href="index.html">
+              <i class="fas fa-arrow-left fa-2x"></i>
+            </a>
+          </div>
           <div class="nav-bar">
-            <span><i class="fas fa-arrow-left"></i></span>
-            <a href="#index.html"
-              ><img
-                src="Maquettes Ohmyfood\images\logo\ohmyfood@2x.svg"
-                alt="logo-ohmyfood"
-            /></a>
+            <div class="logo">
+              <a href="index.html"
+                ><img
+                  src="Maquettes-Ohmyfood/images/logo/ohmyfood.png"
+                  alt="logo-ohmyfood"
+                />
+              </a>
+            </div>
           </div>
         </nav>
       </header>
       <!-- fin header -->
       <!-- section picture -->
-      <section class="picture">
+      <div class="picture">
         <div class="img-restaurant">
           <img
-            src="Maquettes Ohmyfood\images\restaurants\louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg"
+            src="Maquettes-Ohmyfood/images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg"
             alt="photo d'un plat du restaurant à la française"
           />
         </div>
-      </section>
+      </div>
       <!-- fin picture -->
 
-      <section class="menu-restaurant">
-        <div class="menu-container">
-          <div class="menu-title">
-            <h1>Le délice des sens</h1>
-            <span><i class="far fa-heart"></i></span>
-          </div>
-          <div class="menu-content"></div>
+      <div class="menu-container">
+        <div class="menu-title">
+          <h1>Le délice des sens</h1>
+          <span class="fav-heart"><i class="far fa-heart fa-2x"></i></span>
+          <span class="fav-heartfull"><i class="fas fa-heart fa-2x"></i></span>
+        </div>
+        <div class="menu-content">
           <div class="menu-type">
             <h2>ENTRÉES</h2>
-            <ul>
-              <li>
-                <h3>Tartare de thon</h3>
-                <p>Assaisonné au yuzu</p>
-                <span>25€</span>
-              </li>
-              <li>
-                <h3>Bouchée de homard croustillant</h3>
-                <p>Et sa farandole de petits légumes</p>
-                <span>35€</span>
-              </li>
-              <li>
-                <h3>Velouté de cèpes</h3>
-                <p>Aux truffes</p>
-                <span>20€</span>
-              </li>
-            </ul>
+            <div class="under-line"></div>
+            <div class="dish-container">
+              <div class="fade-in-up">
+                <ul>
+                  <li>
+                    <div class="dish-content" id="delay-1">
+                      <div class="dish-title">
+                        <h3>Tartare de thon</h3>
+                      </div>
+                      <div class="dish-text">
+                        <p>Assaisonné au yuzu</p>
+                        <div class="dish-price"><span>25€</span></div>
+                        <div class="dish-select">
+                          <i class="icon-select fas fa-check-circle"></i>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="dish-content" id="delay-2">
+                      <div class="dish-title">
+                        <h3>Bouchée de homard croustillant</h3>
+                      </div>
+                      <div class="dish-text">
+                        <p>Et sa farandole de petits légumes</p>
+                        <div class="dish-price"><span>35€</span></div>
+                        <div class="dish-select">
+                          <i class="icon-select fas fa-check-circle"></i>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="dish-content" id="delay-3">
+                      <div class="dish-title">
+                        <h3>Velouté de cèpes</h3>
+                      </div>
+                      <div class="dish-text">
+                        <p>Aux truffes</p>
+                        <div class="dish-price"><span>20€</span></div>
+                        <div class="dish-select">
+                          <i class="icon-select fas fa-check-circle"></i>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
           </div>
           <div class="menu-type">
-            <h2>PLATS</h2>
-            <ul>
-              <li>
-                <h3>Poulet rôti aux herbes de Provence</h3>
-                <p>Et sa crème de truffe</p>
-                <span>40€</span>
-              </li>
-              <li>
-                <h3>Langouste rôtie</h3>
-                <p>Et ses légumes de saison</p>
-                <p>
-                  <span>35€</span>
-                </p>
-              </li>
-
-              <li>
-                <h3>Côte de boeuf Angus</h3>
-                <p>Et sa purée de panais</p>
-                <span>44€</span>
-              </li>
-            </ul>
+            <div class="dish-title">
+              <h2>PLATS</h2>
+              <div class="under-line"></div>
+              <div class="fade-in-up">
+                <ul>
+                  <li>
+                    <div class="dish-content" id="delay-4">
+                      <div class="dish-title">
+                        <h3>Poulet rôti aux herbes de Provence</h3>
+                      </div>
+                      <div class="dish-text">
+                        <p>Et sa crème de truffe</p>
+                        <div class="dish-price"><span>40€</span></div>
+                        <div class="dish-select">
+                          <i class="icon-select fas fa-check-circle"></i>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="dish-content" id="delay-5">
+                      <div class="dish-title">
+                        <h3>Langouste rôtie</h3>
+                      </div>
+                      <div class="dish-text">
+                        <p>Et ses légumes de saison</p>
+                        <div class="dish-price"><span>35€</span></div>
+                        <div class="dish-select">
+                          <i class="icon-select fas fa-check-circle"></i>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="dish-content" id="delay-6">
+                      <div class="dish-title">
+                        <h3>Côte de boeuf Angus</h3>
+                      </div>
+                      <div class="dish-text">
+                        <p>Et sa purée de panais</p>
+                        <div class="dish-price"><span>44€</span></div>
+                        <div class="dish-select">
+                          <i class="icon-select fas fa-check-circle"></i>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
           </div>
           <div class="menu-type">
             <h2>DESSERTS</h2>
-            <ul>
-              <li>
-                <h3>Farandole de desserts</h3>
-                <p>Du chef</p>
-                <span>18€</span>
-              </li>
-              <li>
-                <h3>Crème brulée</h3>
-                <p>Revisité</p>
-                <span>22€</span>
-              </li>
-              <li>
-                <h3>Tiramisu</h3>
-                <p>À la noisette</p>
-                <span>23€</span>
-              </li>
-            </ul>
-          </div>
-          <div class="order-button">
-            <p>Commander</p>
-          </div>
-        </div>
-      </section>
-
-      <!-- footer -->
-      <footer>
-        <section class="footer-container">
-          <div class="footer-content">
-            <img
-              src="Maquettes Ohmyfood\images\logo\ohmyfood@2x.svg"
-              alt="logo-ohmyfood"
-            />
-            <div>
+            <div class="under-line"></div>
+            <div class="fade-in-up">
               <ul>
                 <li>
-                  <span><i class="fas fa-utensils"></i></span>
-                  Proposer un restaurant
+                  <div class="dish-content" id="delay-7">
+                    <div class="dish-title">
+                      <h3>Farandole de desserts</h3>
+                    </div>
+                    <div class="dish-text">
+                      <p>Du chef</p>
+                      <div class="dish-price"><span>18€</span></div>
+                      <div class="dish-select">
+                        <i class="icon-select fas fa-check-circle"></i>
+                      </div>
+                    </div>
+                  </div>
                 </li>
                 <li>
-                  <span><i class="fas fa-hands-helping"></i></span>
-                  Devenir partenaire
+                  <div class="dish-content" id="delay-8">
+                    <div class="dish-group">
+                      <div class="dish-title">
+                        <h3>Crème brulée</h3>
+                      </div>
+                      <div class="dish-text">
+                        <p>Revisitée</p>
+                        <div class="dish-price"><span>22€</span></div>
+                        <div class="dish-select">
+                          <i class="icon-select fas fa-check-circle"></i>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                 </li>
-                <li>Mentions légales</li>
-                <li>Contact</li>
+                <li>
+                  <div class="dish-content" id="delay-9">
+                    <div class="dish-title">
+                      <h3>Tiramisu</h3>
+                    </div>
+                    <div class="dish-text">
+                      <p>À la noisette</p>
+                      <div class="dish-price"><span>23€</span></div>
+                      <div class="dish-select">
+                        <i class="icon-select fas fa-check-circle"></i>
+                      </div>
+                    </div>
+                  </div>
+                </li>
               </ul>
             </div>
           </div>
-        </section>
-      </footer>
-      <!-- fin footer -->
-    </section>
+        </div>
+        <div class="restaurant-button">
+          <a href="#">Commander</a>
+        </div>
+      </div>
+    </div>
+    <!-- footer -->
+    <footer class="footer-container">
+      <div class="footer-content">
+        <div class="footer-logo">
+          <a href="index.html">
+            <img
+              src="Maquettes-Ohmyfood/images/logo/ohmyfood.png"
+              alt="logo-ohmyfood"
+            />
+          </a>
+        </div>
+        <div>
+          <ul>
+            <li class="footer-text">
+              <a href="#"
+                ><span><i class="fas fa-utensils"></i></span> Proposer un
+                restaurant</a
+              >
+            </li>
+            <li class="footer-text">
+              <a href="#"
+                ><span><i class="fas fa-hands-helping"></i></span> Devenir
+                partenaire</a
+              >
+            </li>
+            <li class="footer-text"><a href="#"> légales</a></li>
+            <li class="footer-text"><a href="#">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+    <!-- fin footer -->
   </body>
 </html>

@@ -39,6 +39,7 @@ header .logo {
   width: 100%;
   padding: 10px 0;
   background-color: #99e2d0;
+  opacity: 0.7;
 }
 
 #my-booking {
@@ -113,6 +114,8 @@ header .logo {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  text-decoration: none;
+  color: #3d3d3d;
 }
 
 footer {
@@ -121,6 +124,16 @@ footer {
 
 .footer-container {
   background-color: #353535;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.footer-content {
+  width: 1280px;
 }
 
 .footer-logo img {
@@ -165,8 +178,8 @@ footer {
       -ms-flex-align: center;
           align-items: center;
   z-index: 9999;
-  -webkit-animation: loader 1s ease;
-          animation: loader 1s ease;
+  -webkit-animation: loader 4s ease;
+          animation: loader 4s ease;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
 }
@@ -432,6 +445,9 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -557,7 +573,7 @@ a {
     margin: auto;
   }
   .card-list {
-    width: 77%;
+    width: auto;
   }
   .card-container {
     width: 100%;
@@ -568,7 +584,7 @@ a {
     margin: auto;
   }
   .circle {
-    margin-right: 77%;
+    left: 58px;
     position: absolute;
   }
   .restaurant-container {
