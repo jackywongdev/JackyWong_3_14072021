@@ -152,6 +152,78 @@ footer {
           animation: card-animation 2s 1s ease-in-out forwards;
 }
 
+.dish-content:hover .dish-price {
+  -webkit-transition: 400ms ease-in-out;
+  transition: 400ms ease-in-out;
+  padding-right: 50px;
+}
+
+.dish-content:hover .dish-select {
+  -webkit-animation: slide 700ms ease both;
+          animation: slide 700ms ease both;
+}
+
+.dish-content:hover .icon-select {
+  -webkit-animation: rotate 0.5s ease-in-out both;
+          animation: rotate 0.5s ease-in-out both;
+}
+
+@-webkit-keyframes slide {
+  0% {
+    -webkit-transform: scaleX(0);
+            transform: scaleX(0);
+    -webkit-transform-origin: 100% 100%;
+            transform-origin: 100% 100%;
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: scaleX(1);
+            transform: scaleX(1);
+    -webkit-transform-origin: 100% 100%;
+            transform-origin: 100% 100%;
+    opacity: 1;
+  }
+}
+
+@keyframes slide {
+  0% {
+    -webkit-transform: scaleX(0);
+            transform: scaleX(0);
+    -webkit-transform-origin: 100% 100%;
+            transform-origin: 100% 100%;
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: scaleX(1);
+            transform: scaleX(1);
+    -webkit-transform-origin: 100% 100%;
+            transform-origin: 100% 100%;
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes rotate {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes rotate {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
 .fav-heart {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -275,12 +347,21 @@ footer {
   -webkit-box-shadow: 4px 4px 6px #aaa;
           box-shadow: 4px 4px 6px #aaa;
   opacity: 0;
+  width: auto;
+  position: relative;
 }
 
 .dish-title h3 {
   font-size: 1rem;
   font-weight: bold;
   padding: 10px 0 0px 10px;
+}
+
+.dish-text p {
+  position: relative;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .dish-text {
@@ -297,6 +378,42 @@ footer {
 .dish-text span {
   font-weight: bold;
   padding-left: 15px;
+}
+
+.dish-group {
+  text-overflow: ellipsis;
+}
+
+.dish-price {
+  display: block;
+}
+
+.dish-select {
+  background-color: #99e2d0;
+  -ms-flex-item-align: center;
+      align-self: center;
+  height: 71px;
+  width: 60px;
+  margin-bottom: 25px;
+  border-top-right-radius: 14px;
+  border-bottom-right-radius: 14px;
+  position: absolute;
+  opacity: 0;
+  right: -2px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.icon-select {
+  color: white;
+  font-size: 20px;
 }
 
 .footer-container {
