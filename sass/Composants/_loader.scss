@@ -18,37 +18,7 @@
   margin-bottom: 150px;
   animation: flash 1s linear infinite;
 }
-@keyframes loader {
-  0% {
-    opacity: 1;
-    z-index: 9999;
-    cursor: wait;
-  }
-  99% {
-    opacity: 1;
-    z-index: 9999;
-    cursor: wait;
-  }
-  100% {
-    opacity: 0;
-    transition: ease;
-    z-index: -9999;
-  }
-}
-@keyframes flash {
-  0% {
-    color: #000000;
-    text-shadow: 0 0 7px #000000;
-  }
-  90% {
-    color: rgb(65, 65, 65);
-    text-shadow: none;
-  }
-  100% {
-    color: #9b9b9b;
-    text-shadow: 0 0 7px #9b9b9b;
-  }
-}
+
 .lettre:nth-child(1) {
   animation-delay: 0.1s;
 }

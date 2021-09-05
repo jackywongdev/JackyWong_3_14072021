@@ -18,70 +18,6 @@ h6 {
   font-family: Shrikhand, Roboto, sans-serif;
 }
 
-footer {
-  width: 100%;
-}
-
-.footer-container {
-  background-color: #353535;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-.footer-content {
-  width: 1280px;
-}
-
-.footer-logo img {
-  width: 130px;
-  -webkit-filter: invert(100%);
-          filter: invert(100%);
-  padding: 30px 0 25px 40px;
-}
-
-.footer .fas {
-  color: white;
-}
-
-.footer-text {
-  margin-left: 40px;
-  list-style-type: none;
-  padding-bottom: 10px;
-}
-
-.footer-text a {
-  color: white;
-}
-
-.footer-text a i {
-  color: white;
-  padding-left: 0px;
-}
-
-.restaurant-button {
-  text-align: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  margin: 30px auto;
-  width: 200px;
-  padding: 15px 10px;
-  border-radius: 50px;
-  background: -webkit-gradient(linear, left top, left bottom, from(#d579d5), to(#9356dc));
-  background: linear-gradient(#d579d5, #9356dc);
-  -webkit-box-shadow: 1px 2px 8px 2px #c4c4c4;
-          box-shadow: 1px 2px 8px 2px #c4c4c4;
-}
-
-.restaurant-button a {
-  text-decoration: none;
-  color: white;
-}
-
 .restaurant-button:hover {
   opacity: 0.7;
 }
@@ -109,6 +45,130 @@ footer {
     -webkit-transform: translateY(0px);
             transform: translateY(0px);
     opacity: 1;
+  }
+}
+
+@-webkit-keyframes loader {
+  0% {
+    opacity: 1;
+    z-index: 9999;
+    cursor: wait;
+  }
+  99% {
+    opacity: 1;
+    z-index: 9999;
+    cursor: wait;
+  }
+  100% {
+    opacity: 0;
+    -webkit-transition: ease;
+    transition: ease;
+    z-index: -9999;
+  }
+}
+
+@keyframes loader {
+  0% {
+    opacity: 1;
+    z-index: 9999;
+    cursor: wait;
+  }
+  99% {
+    opacity: 1;
+    z-index: 9999;
+    cursor: wait;
+  }
+  100% {
+    opacity: 0;
+    -webkit-transition: ease;
+    transition: ease;
+    z-index: -9999;
+  }
+}
+
+@-webkit-keyframes flash {
+  0% {
+    color: #000000;
+    text-shadow: 0 0 7px #000000;
+  }
+  90% {
+    color: #414141;
+    text-shadow: none;
+  }
+  100% {
+    color: #9b9b9b;
+    text-shadow: 0 0 7px #9b9b9b;
+  }
+}
+
+@keyframes flash {
+  0% {
+    color: #000000;
+    text-shadow: 0 0 7px #000000;
+  }
+  90% {
+    color: #414141;
+    text-shadow: none;
+  }
+  100% {
+    color: #9b9b9b;
+    text-shadow: 0 0 7px #9b9b9b;
+  }
+}
+
+@-webkit-keyframes slide {
+  0% {
+    -webkit-transform: scaleX(0);
+            transform: scaleX(0);
+    -webkit-transform-origin: 100% 100%;
+            transform-origin: 100% 100%;
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: scaleX(1);
+            transform: scaleX(1);
+    -webkit-transform-origin: 100% 100%;
+            transform-origin: 100% 100%;
+    opacity: 1;
+  }
+}
+
+@keyframes slide {
+  0% {
+    -webkit-transform: scaleX(0);
+            transform: scaleX(0);
+    -webkit-transform-origin: 100% 100%;
+            transform-origin: 100% 100%;
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: scaleX(1);
+            transform: scaleX(1);
+    -webkit-transform-origin: 100% 100%;
+            transform-origin: 100% 100%;
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes rotate {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes rotate {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
   }
 }
 
@@ -178,94 +238,56 @@ footer {
           animation: rotate 0.5s ease-in-out both;
 }
 
-@-webkit-keyframes slide {
-  0% {
-    -webkit-transform: scaleX(0);
-            transform: scaleX(0);
-    -webkit-transform-origin: 100% 100%;
-            transform-origin: 100% 100%;
-    opacity: 1;
-  }
-  100% {
-    -webkit-transform: scaleX(1);
-            transform: scaleX(1);
-    -webkit-transform-origin: 100% 100%;
-            transform-origin: 100% 100%;
-    opacity: 1;
-  }
-}
-
-@keyframes slide {
-  0% {
-    -webkit-transform: scaleX(0);
-            transform: scaleX(0);
-    -webkit-transform-origin: 100% 100%;
-            transform-origin: 100% 100%;
-    opacity: 1;
-  }
-  100% {
-    -webkit-transform: scaleX(1);
-            transform: scaleX(1);
-    -webkit-transform-origin: 100% 100%;
-            transform-origin: 100% 100%;
-    opacity: 1;
-  }
-}
-
-@-webkit-keyframes rotate {
-  0% {
-    -webkit-transform: rotate(0deg);
-            transform: rotate(0deg);
-  }
-  100% {
-    -webkit-transform: rotate(360deg);
-            transform: rotate(360deg);
-  }
-}
-
-@keyframes rotate {
-  0% {
-    -webkit-transform: rotate(0deg);
-            transform: rotate(0deg);
-  }
-  100% {
-    -webkit-transform: rotate(360deg);
-            transform: rotate(360deg);
-  }
-}
-
-.fav-heart {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  position: absolute;
-  right: 4%;
-}
-
-.fav-heart:hover {
+.heart-content:hover .fav-heart {
   opacity: 0;
 }
 
-.fav-heartfull {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  opacity: 0;
-  position: absolute;
-  right: 4%;
-}
-
-.fav-heartfull:hover {
+.heart-content:hover .fav-heartfull {
   opacity: 1;
 }
 
-.fav-heartfull:hover :before {
-  color: transparent;
-  border: transparent;
-  background-clip: text;
-  -webkit-background-clip: text;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(146, 86, 220, 0.7)), to(rgba(255, 121, 218, 0.7)));
-  background-image: linear-gradient(180deg, rgba(146, 86, 220, 0.7), rgba(255, 121, 218, 0.7));
+footer {
+  width: 100%;
+}
+
+.footer-container {
+  background-color: #353535;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.footer-content {
+  width: 1280px;
+}
+
+.footer-logo img {
+  width: 130px;
+  -webkit-filter: invert(100%);
+          filter: invert(100%);
+  padding: 30px 0 25px 40px;
+}
+
+.footer .fas {
+  color: white;
+}
+
+.footer-text {
+  margin-left: 40px;
+  list-style-type: none;
+  padding-bottom: 10px;
+}
+
+.footer-text a {
+  color: white;
+}
+
+.footer-text a i {
+  color: white;
+  padding-left: 0px;
 }
 
 .header-bar {
@@ -335,6 +357,48 @@ footer {
   font-size: x-large;
   font-weight: bold;
   padding: 10px 0 10px 20px;
+}
+
+.heart-content:hover .fav-heart {
+  opacity: 0;
+}
+
+.heart-content:hover .fav-heartfull {
+  opacity: 1;
+}
+
+.fav-heart {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  right: 4%;
+  z-index: 5;
+  -webkit-animation: fade-out 100ms ease-out forwards;
+          animation: fade-out 100ms ease-out forwards;
+}
+
+.fav-heartfull {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  opacity: 0;
+  position: absolute;
+  right: 4%;
+  z-index: 5;
+}
+
+.fav-heartfull:hover {
+  opacity: 1;
+}
+
+.fav-heartfull:hover :before {
+  color: transparent;
+  border: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(146, 86, 220, 0.7)), to(rgba(255, 121, 218, 0.7)));
+  background-image: linear-gradient(180deg, rgba(146, 86, 220, 0.7), rgba(255, 121, 218, 0.7));
 }
 
 .menu-type h2 {
@@ -422,6 +486,26 @@ footer {
 .icon-select {
   color: white;
   font-size: 20px;
+}
+
+.restaurant-button {
+  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 30px auto;
+  width: 200px;
+  padding: 15px 10px;
+  border-radius: 50px;
+  background: -webkit-gradient(linear, left top, left bottom, from(#d579d5), to(#9356dc));
+  background: linear-gradient(#d579d5, #9356dc);
+  -webkit-box-shadow: 1px 2px 8px 2px #c4c4c4;
+          box-shadow: 1px 2px 8px 2px #c4c4c4;
+}
+
+.restaurant-button a {
+  text-decoration: none;
+  color: white;
 }
 
 .footer-container {
