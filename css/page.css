@@ -238,14 +238,6 @@ h6 {
           animation: rotate 0.5s ease-in-out both;
 }
 
-.heart-content:hover .fav-heart {
-  opacity: 0;
-}
-
-.heart-content:hover .fav-heartfull {
-  opacity: 1;
-}
-
 footer {
   width: 100%;
 }
