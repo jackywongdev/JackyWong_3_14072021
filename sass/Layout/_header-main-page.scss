@@ -8,14 +8,20 @@ header {
 }
 
 .search-bar {
+  display: flex;
+  justify-content: center;
   text-align: center;
   width: 100%;
   padding: 10px 0;
-  background-color: $tertiary;
+  background-color: #ededed;
   opacity: 0.7;
+  margin: 0 auto;
+  i {
+    cursor: pointer;
+  }
 }
 #my-booking {
-  background-color: $tertiary;
+  background-color: #ededed;
 }
 
 .restaurant-container {
