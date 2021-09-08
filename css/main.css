@@ -244,14 +244,6 @@ h6 {
   opacity: 0.7;
 }
 
-.heart-content:hover .fav-heart {
-  opacity: 0;
-}
-
-.heart-content:hover .fav-heartfull {
-  opacity: 1;
-}
-
 header .logo {
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -269,15 +261,26 @@ header .logo {
 }
 
 .search-bar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   text-align: center;
   width: 100%;
   padding: 10px 0;
-  background-color: #99e2d0;
+  background-color: #ededed;
   opacity: 0.7;
+  margin: 0 auto;
+}
+
+.search-bar i {
+  cursor: pointer;
 }
 
 #my-booking {
-  background-color: #99e2d0;
+  background-color: #ededed;
 }
 
 .restaurant-container {
@@ -606,7 +609,7 @@ a {
     margin: auto;
   }
   .operation-container h3 {
-    padding-left: 30px;
+    padding-left: 15px;
   }
   .card-holder {
     width: 100%;
