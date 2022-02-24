@@ -10,6 +10,8 @@ Projet numéro 3 du parcours Développeur Web chez OpenClassrooms : "Dynamisez u
 
 L'objectif est de reproduire la maquette d'un site web "Reservia" un site de plannification de vacances(Hébergement et/ou activités) (voir l'image ci-dessous).
 
+https://jackywongdev.github.io/JackyWong_3_14072021/
+
 
 ![image](https://github.com/jackywongdev/JackyWong_3_14072021/blob/master/Maquettes-Ohmyfood/maquettes/15982605908418_Maquettes%20Ohmyfood.jpg)
 
